@@ -21,6 +21,7 @@ nav {
 }
 
 nav a {
+  font-family:'Times New Roman', Times, serif;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -36,4 +37,6 @@ h1{
   text-align: center;
   text-decoration: solid gray
 }
-
+img{
+ border: 3px solid #333;
+}
