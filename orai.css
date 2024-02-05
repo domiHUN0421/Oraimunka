@@ -21,7 +21,7 @@ nav {
 }
 
 nav a {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -33,10 +33,43 @@ nav a {
 nav a:hover {
   background-color: #555;
 }
-h1{
+h1 {
   text-align: center;
-  text-decoration: solid gray
+  text-decoration: solid gray;
 }
-img{
- border: 3px solid #333;
+img {
+  border: 3px solid #333;
+}
+:root {
+  --c: rgb(0, 0, 0);
+  --d: ;
+}
+
+body:has(#checkbox:checked) {
+  --c: red;
+}
+
+h2 {
+  color: var(--c);
+  text-align: center;
+}
+#settings {
+  font-weight: bold;
+  font-size: 40px;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    color: red;
+  }
+  nav,
+  header {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  #settings {
+    display: none;
+  }
 }
